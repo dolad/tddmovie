@@ -1,17 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <search-component @search='changeMovieResult'></search-component>
+    <counter/>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import SearchComponent from './components/SearchComponent'
+import Counter from './Counter'
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    HelloWorld
+    SearchComponent,
+    Counter
+  },
+  data () {
+    return {
+      movies: []
+    }
+  },
+
+  methods: {
+    changeMovieResult (result) {
+      this.movies = result
+    }
   }
 }
 </script>
