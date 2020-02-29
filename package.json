@@ -13,6 +13,7 @@
     "core-js": "^3.6.4",
     "eslint": "^5.16.0",
     "eslint-loader": "^2.1.2",
+    "normalize.css": "^8.0.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -28,6 +29,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.1.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
