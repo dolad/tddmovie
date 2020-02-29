@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <search-component @search='changeMovieResult'></search-component>
-    <counter/>
+    <movie-list :movies="movies"></movie-list>
+    <!-- <counter/> -->
 
   </div>
 </template>
@@ -9,13 +10,16 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import SearchComponent from './components/SearchComponent'
-import Counter from './Counter'
+import MovieList from './components/MovieList'
+
+// import Counter from './Counter'
 
 export default {
   name: 'app',
   components: {
     SearchComponent,
-    Counter
+    // Counter,
+    MovieList
   },
   data () {
     return {
